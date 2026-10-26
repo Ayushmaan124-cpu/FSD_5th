@@ -1,0 +1,179 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #f4f6f8;
+    min-height: 100vh;
+    padding: 40px 20px;
+    color: #333;
+}
+
+.container {
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    background: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 30px;
+}
+
+.form-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px 40px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+input,
+select {
+    height: 42px;
+    padding: 8px 12px;
+    border: 1px solid #bbb;
+    border-radius: 5px;
+    font-size: 15px;
+    outline: none;
+}
+
+input:focus,
+select:focus {
+    border-color: #555;
+}
+
+.add-btn {
+    width: 100%;
+    height: 42px;
+    margin-top: 25px;
+    border: none;
+    border-radius: 5px;
+    background: #333;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.add-btn:hover {
+    background: #222;
+}
+
+.search {
+    margin-top: 25px;
+}
+
+.search input {
+    width: 100%;
+}
+
+.stats {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    margin: 25px 0;
+}
+
+.stat-box {
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.stat-box strong {
+    font-size: 20px;
+}
+
+.table-container {
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    border: 1px solid #ccc;
+    padding: 12px;
+    text-align: center;
+}
+
+th {
+    background: #eee;
+}
+
+.edit-btn,
+.delete-btn {
+    padding: 6px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 13px;
+}
+
+.edit-btn {
+    background: white;
+    border: 1px solid #555;
+}
+
+.delete-btn {
+    background: #333;
+    border: 1px solid #333;
+    color: white;
+    margin-left: 5px;
+}
+
+.edit-btn:hover {
+    background: #eee;
+}
+
+.delete-btn:hover {
+    background: #555;
+}
+
+.grade {
+    font-weight: bold;
+}
+
+.no-students {
+    text-align: center;
+    padding: 20px;
+    display: none;
+}
+
+@media (max-width: 650px) {
+
+    .container {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .form-section,
+    .stats {
+        grid-template-columns: 1fr;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+}
